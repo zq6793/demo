@@ -1,0 +1,222 @@
+body{
+    position: relative;
+    /* overflow-y: hidden */
+}
+header{
+    width: 100%;
+    height: 0.75rem;
+    border-bottom:1px solid #e9e9e9; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: .75rem;
+    padding-left:5px; 
+}
+header img{
+    width: .25rem;
+    height:.25rem;
+    display: block;
+    margin-right: 10px;
+    /* margin-right: 5px; */
+}
+.inpu{
+    height: .4rem;
+    width: 2.43rem;
+    display: flex;
+    border-radius:.2rem; 
+    justify-content: space-around;
+    /* width: 100px; */
+    background: #f4f8fb;
+}
+#dizhi_first{
+    width: .65rem;
+    height: .4rem;
+    background: #f4f8fb;
+    font-size: 12px;
+    outline: none;
+    text-indent: 0px;
+    color: #35393c;
+    line-height: .4rem;
+    text-align: center;
+    border: transparent;
+    margin-left: 10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#shengshi{
+    color: #000000;
+    font-size: 13px;
+}
+#dizhi_first  img{
+    width: .1rem;
+    height: .1rem;
+    display: inline-block;
+    }
+header input{
+    height: .4rem;
+    width: 1.3rem; 
+    background: #f4f8fb;
+    border: transparent;
+    outline: none;
+    text-indent: 10px;
+}
+header span{
+    display:inline-block;
+    height: .4rem;
+    background: #f4f8fb;
+    width: .4rem;
+    /* text-indent: 10px; */
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-size: 20px;
+    line-height: .4rem;
+    text-align: center；
+    color: #bdc1c4;
+}
+header button{
+    height: .4rem;
+    width: .55rem;
+    text-align: center;
+    line-height: .4rem;
+    color: #7dcac0;
+    background: #ffffff;
+    border: transparent;
+    outline: none;
+}
+section{
+    width: 100%;
+    height: .5rem;
+    display: flex;
+    border-bottom: 1px solid #e9e9e9;
+    justify-content: space-around;
+    align-items: center;
+}
+#phone_first {
+    width: 0.8rem;
+    height: .5rem;
+    line-height: .5rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+}
+#shu{
+    font-size: 10px;
+    color: #a0a0a0;
+}
+section img {
+    width: .1rem;
+    height: .1rem;
+    display: inline-block;
+    margin-left: -.2rem;
+    /* margin-right: 10p; */
+    margin-top: .22rem;
+}
+.li{
+    width: 100%;
+    height:1.25rem;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.li img{
+    width: .8rem;
+    height: .8rem;
+}
+.li ul{
+    list-style: none;
+    height: .8rem;
+}
+.li ul li{
+   width: 1.5rem;
+   height: .3rem;
+   line-height: .3rem;
+   font-size: 10px;
+   color: #989ba2;
+}
+.li ul li span{
+    margin-right: 5px;
+}
+.li ul li:nth-child(1){
+    font-size: 16px;
+    font-weight: 600;
+    color: #42465f;
+}
+.li ul li:nth-child(2){
+    font-size: 14px;
+    /* font-weight: 600; */
+    color: #42465f;
+}
+.li p{
+    font-size: .2rem;
+    font-weight: 600;
+    color: #ee6f44;
+    margin-right: 10px;
+    margin-bottom: .45rem;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    height: .65rem;
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+}
+.foot img{
+    width: .2rem;
+    height:.2rem;
+}
+.hua_out{
+     width: 100%;
+    display: none;
+    position: absolute;
+    top: 5.71rem;
+    background: #f4f8fb;
+}
+.hua_out::after{
+    content: "";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.hua_out p{
+    display: flex;
+    height: .65rem;
+    line-height: .65rem;
+    /* justify-content: space-around; */
+
+}
+.hua_out p span{
+    font-size: .2rem;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #4b4b4b;
+}
+.hua_out p span:nth-child(2){
+    margin:0 auto;
+}
+.hua_out .left,.hua_out .right{
+    list-style: none;
+    width: 50%;
+    overflow-y:scroll;
+    float: left;
+    background: #ffffff;
+    /* background: red */
+}
+ul li{
+    height: .65rem;
+    line-height: .65rem;
+    font-size: 14px;
+    text-indent: .2rem;
+    color: #4b4b4b;
+}
+.left li:nth-child(1){
+    background: #f8f7fc;
+}
+.hua_out .right{
+  background: #f8f7fc;
+}

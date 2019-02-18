@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bigNumber.css">
+</head>
+
+<body>
+    <h3></h3>
+    <div class="top">
+        <div class="top_one">
+            <div class="top_two">
+                <p>
+                    <span class="sanjiao"></span>
+                    <span>大厅等候办理业务类型人数比例</span>
+                </p>
+                <ul class="ul_1" style="width:100%;">
+                    <li id="top_1" style="width:30%;height:220px;"></li>
+                    <li id="top_2" style="width:30%;height:220px;"></li>
+                    <li id="top_3" style="width:30%;height:220px;"></li>
+                </ul>
+            </div>
+            <div class="top_two">
+                <p>
+                    <span class="sanjiao"></span>
+                    <span>预计等候时间 / 平均办理时间</span>
+                </p>
+                <ul class="ul_1" style="width:100%;justify-content: flex-start;padding-left: 20px;">
+                    <table cellspacing='0' cellpadding='20px' width='100%'>
+                        <tr id="tr_1" style="font-size: 1.2rem;height: 40px;color: #e9efef; background:#171d33 url(img/tiaozhuangwu.jpg) no-repeat;background-position:0 37px;">
+                            <td>[&lt;&lt;时间</td>
+                            <td>业务类型1</td>
+                            <td>业务类型2</td>
+                            <td>业务类型3&gt;&gt;]</td>
+                        </tr>
+                        <tr id="tr_2" style="font-size: 1.2rem;height: 50px;color: #e9efef; background:url(img/tiaozhuangwu.jpg) no-repeat;background-position:0 47px;">
+                            <td style='background:url(img/shuzhuang.jpg) no-repeat;background-position:90px 18px;'>平均办理时间/s</td>
+                            <td class="yello" style="font-size:1.4rem;color:#fdfd00;background:url(img/shuzhuang.jpg) no-repeat;background-position:40px 18px;">120</td>
+                            <td class="yello" style="font-size:1.4rem;color:#fdfd00;background:url(img/shuzhuang.jpg) no-repeat;background-position:50px 18px;">120</td>
+                            <td class="yello" style="font-size:1.4rem;color:#fdfd00;">120</td>
+                        </tr>
+                        <tr id="tr_3" style="font-size: 1.2rem;height: 50px;color: #e9efef; background:url(img/tiaozhuangwu.jpg) no-repeat;background-position:0 47px;">
+                            <td style='background:url(img/shuzhuang.jpg) no-repeat;background-position:90px 18px;'>等候时间/s</td>
+                            <td class="yello" style="font-size:1.4rem;color:#fdfd00;background:url(img/shuzhuang.jpg) no-repeat;background-position:40px 18px;">620</td>
+                            <td class="yello" style="font-size:1.4rem;color:#fdfd00;background:url(img/shuzhuang.jpg) no-repeat;background-position:50px 18px;">800</td>
+                            <td class="yello" style="font-size:1.4rem;color:#fdfd00;">100</td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </div>
+        <div class="top_three" id="top_two">
+            <img src="img/map.jpg" alt="">
+        </div>
+        <div class="top_four">
+            <div class="top_five">
+                <p>
+                    <span class="sanjiao"></span>
+                    <span>当日各时间段大厅人流量曲线图</span>
+                </p>
+                <div id="zhexian" style=" width:100%;height:220px;color:#ffffff;">
+                </div>
+                <div class="top_five">
+                    <p>
+                        <span class="sanjiao"></span>
+                        <span>当月大厅人流量变化走势图</span>
+                    </p>
+                    <div id="zhuzhuang" style=" width:100%;height:220px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom" style="margin-top:50px;">
+        <div class="top_one">
+            <p>
+                <span class="sanjiao"></span>
+                <span>接待人员情况</span>
+            </p>
+            <ul class="ul_1" style="width:100%;">
+                <li id="bottom_1" style="width:30%;height:220px;"></li>
+                <li id="bottom_2" style="width:30%;height:220px;"></li>
+                <li id="bottom_3" style="width:30%;height:220px;"></li>
+            </ul>
+        </div>
+        <div class="bottom_two" style="transform:translateY(-40px) ;">
+            <p>
+                <span class="sanjiao"></span>
+                <span>当月数据展现</span>
+            </p>
+            <ul>
+                <li>
+                    <a href="">业务1</a>
+                    <a href="">业务2</a>
+                    <a href="">业务3</a>
+                    <a href="">业务4</a>
+                    <a href="">业务5</a>
+                    <a href="">业务6</a>
+                </li>
+                <li>单位/万</li>
+ 
+    <li style="display:flex;   justify-content: space-around;">
+                        <nav id="bottom_4" style="width:30%;height:165px;"></nav>
+                        <nav id="bottom_5" style="width:30%;height:165px;"></nav>
+                        <nav id="bottom_6" style="width:30%;height:165px;"></nav>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom_five" style="width:30%">
+            <p>
+                <span class="sanjiao"></span>
+                <span>当月业务办理量</span>
+            </p>
+            <div id="shan" style=" width:100%;height:210px;">
+            </div>
+    </div>
+    </div>
+  <footer>
+      <span>2019 年 1 月 2 日 星期三 17:54</span>
+      <img src="img/list.jpg" alt="">
+      <span>今日天气 某某市 晴转多云 -2-3度</span>
+  </footer>
+</body>
+
+</html>
+<script src="js/echarts.js"></script>
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="js/one.js"></script>
+<script type="text/javascript">
+    one();
+    two();
+    three();
+    four();
+    five();
+    six();
+aa();bb();
+    function one() {
+        var option1 = {
+                value: 60, //百分比,必填
+                backgroundColor: null,
+                title: "业务类型1",
+                color: ['#1afdf6', '#003a84'],
+                fontSize: 20,
+                domEle: document.getElementById("top_1") //必填
+            },
+            percentPie1 = new PercentPie(option1);
+        percentPie1.init();
+
+        var option2 = {
+                value: 35, //百分比,必填
+                backgroundColor: null,
+                title: "业务类型2",
+                color: ['#1afdf6', '#003a84'],
+                fontSize: 20,
+                domEle: document.getElementById("top_2") //必填
+            },
+            percentPie2 = new PercentPie(option2);
+        percentPie2.init();
+
+        var option3 = {
+                value: 5, //百分比,必填
+                backgroundColor: null,
+                title: "业务类型3",
+                color: ['#1afdf6', '#003a84'],
+                fontSize: 20,
+                domEle: document.getElementById("top_3") //必填
+            },
+            percentPie3 = new PercentPie(option3);
+        percentPie3.init();
+    }
+
+    function two() {
+        var myChart = document.getElementById('zhexian');
+        var myChart = echarts.init(document.getElementById('zhexian'));
+
+        function randomData() {
+            now = new Date(+now + oneDay);
+            value = value + Math.random() * 21 - 10;
+            return {
+                name: now.toString(),
+                value: [
+                    [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+                    Math.round(value)
+                ]
+            }
+        }
+
+        var data = [];
+        var now = +new Date(1997, 9, 3);
+        var oneDay = 24 * 3600 * 1000;
+        var value = Math.random() * 1000;
+        for (var i = 0; i < 1000; i++) {
+            data.push(randomData());
+        }
+
+        option = {
+            title: {
+                // text: '动态数据 + 时间坐标轴'
+            },
+            tooltip: {
+                trigger: 'axis',
+                formatter: function (params) {
+                    params = params[0];
+                    var date = new Date(params.name);
+                    return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' +
+                        params.value[1];
+                },
+                axisPointer: {
+                    animation: false
+                }
+            },
+            xAxis: {
+                type: 'time',
+                splitLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'value',
+                boundaryGap: [0, '100%'],
+                splitLine: {
+                    show: false
+                }
+            },
+            series: [{
+                name: '模拟数据',
+                type: 'line',
+                showSymbol: false,
+                hoverAnimation: false,
+                data: data
+            }]
+        };
+
+        setInterval(function () {
+
+            for (var i = 0; i < 5; i++) {
+                data.shift();
+                data.push(randomData());
+            }
+
+            myChart.setOption({
+                series: [{
+                    data: data
+                }]
+            });
+        }, 1000);
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+
+            myChart.resize();
+
+        });
+    }
+
+    function three() {
+        var myChart = document.getElementById('zhuzhuang');
+        var myChart = echarts.init(document.getElementById('zhuzhuang'));
+        var dataCount = 5e5;
+        var data = generateData(dataCount);
+
+        var option = {
+            title: {
+                // text: echarts.format.addCommas(dataCount) + ' Data',
+                left: 10
+            },
+            toolbox: {
+                feature: {
+                    dataZoom: {
+                        yAxisIndex: false
+                    },
+                    saveAsImage: {
+                        pixelRatio: 2
+                    }
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            grid: {
+                bottom: 90
+            },
+            dataZoom: [{
+                type: 'inside'
+            }, {
+                type: 'slider'
+            }],
+            xAxis: {
+                data: data.categoryData,
+                silent: false,
+                splitLine: {
+                    show: false
+                },
+                splitArea: {
+                    show: false
+                }
+            },
+            yAxis: {
+                splitArea: {
+                    show: false
+                }
+            },
+            series: [{
+                type: 'bar',
+                data: data.valueData,
+                // Set `large` for large data amount
+                large: true
+            }]
+        };
+
+        function generateData(count) {
+            var baseValue = Math.random() * 1000;
+            var time = +new Date(2011, 0, 1);
+            var smallBaseValue;
+
+            function next(idx) {
+                smallBaseValue = idx % 30 === 0 ?
+                    Math.random() * 700 :
+                    (smallBaseValue + Math.random() * 500 - 250);
+                baseValue += Math.random() * 20 - 10;
+                return Math.max(
+                    0,
+                    Math.round(baseValue + smallBaseValue) + 3000
+                );
+            }
+
+            var categoryData = [];
+            var valueData = [];
+
+            for (var i = 0; i < count; i++) {
+                categoryData.push(echarts.format.formatTime('yyyy-MM-dd\nhh:mm:ss', time));
+                valueData.push(next(i).toFixed(2));
+                time += 1000;
+            }
+
+            return {
+                categoryData: categoryData,
+                valueData: valueData
+            };
+        }
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+
+            myChart.resize();
+
+        });
+    }
+
+    function four() {
+        var myChart = document.getElementById('bottom_1');
+        var myChart = echarts.init(document.getElementById('bottom_1'));
+        option = {
+            tooltip: {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                feature: {
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [{
+                name: '业务指标',
+                type: 'gauge',
+                detail: {
+                    formatter: '{value}人'
+                },
+                data: [{
+                    value: 50,
+                    name: '人数'
+                }]
+            }]
+        };
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+
+            myChart.resize();
+
+        });
+    }
+
+    function five() {
+        var myChart = document.getElementById('bottom_2');
+        var myChart = echarts.init(document.getElementById('bottom_2'));
+        option = {
+            tooltip: {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                feature: {
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [{
+                name: '业务指标',
+                type: 'gauge',
+                detail: {
+                    formatter: '{value}人'
+                },
+                data: [{
+                    value: 40,
+                    name: '人数'
+                }]
+            }]
+        };
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+
+            myChart.resize();
+
+        });
+    }
+
+    function six() {
+        var myChart = document.getElementById('bottom_3');
+        var myChart = echarts.init(document.getElementById('bottom_3'));
+        option = {
+            tooltip: {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                feature: {
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [{
+                name: '业务指标',
+                type: 'gauge',
+                detail: {
+                    formatter: '{value}人'
+                },
+                data: [{
+                    value: 70,
+                    name: '人数'
+                }]
+            }]
+        };
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+
+            myChart.resize();
+
+        });
+    }
+    function aa() {
+        var option1 = {
+                value: 60, //百分比,必填
+                backgroundColor: null,
+                title: "本月退库",
+                color: ['#1afdf6', '#003a84'],
+                fontSize: 20,
+                domEle: document.getElementById("bottom_4") //必填
+            },
+            percentPie1 = new PercentPie(option1);
+        percentPie1.init();
+
+        var option2 = {
+                value: 35, //百分比,必填
+                backgroundColor: null,
+                title: "出口退库",
+                color: ['#1afdf6', '#003a84'],
+                fontSize: 20,
+                domEle: document.getElementById("bottom_5") //必填
+            },
+            percentPie2 = new PercentPie(option2);
+        percentPie2.init();
+
+        var option3 = {
+                value: 5, //百分比,必填
+                backgroundColor: null,
+                title: "一般退库",
+                color: ['#1afdf6', '#003a84'],
+                fontSize: 20,
+                domEle: document.getElementById("bottom_6") //必填
+            },
+            percentPie3 = new PercentPie(option3);
+        percentPie3.init();
+    }
+function bb(){
+    var weatherIcons = {
+    'Sunny': './data/asset/img/weather/sunny_128.png',
+    'Cloudy': './data/asset/img/weather/cloudy_128.png',
+    'Showers': './data/asset/img/weather/showers_128.png'
+};
+var myChart = document.getElementById('shan');
+        var myChart = echarts.init(document.getElementById('shan'));
+option = {
+    title: {
+        text: '天气情况统计',
+        subtext: '虚构数据',
+        left: 'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        // orient: 'vertical',
+        // top: 'middle',
+        bottom: 10,
+        left: 'center',
+        data: ['西凉', '益州','兖州','荆州','幽州']
+    },
+    series : [
+        {
+            type: 'pie',
+            radius : '65%',
+            center: ['50%', '50%'],
+            selectedMode: 'single',
+            data:[
+                {
+                    value:1548,
+                    name: '幽州',
+                    label: {
+                        normal: {
+                            formatter: [
+                                '{title|{b}}{abg|}',
+                                '  {weatherHead|天气}{valueHead|天数}{rateHead|占比}',
+                                '{hr|}',
+                                '  {Sunny|}{value|202}{rate|55.3%}',
+                                '  {Cloudy|}{value|142}{rate|38.9%}',
+                                '  {Showers|}{value|21}{rate|5.8%}'
+                            ].join('\n'),
+                            backgroundColor: '#eee',
+                            borderColor: '#777',
+                            borderWidth: 1,
+                            borderRadius: 4,
+                            rich: {
+                                title: {
+                                    color: '#eee',
+                                    align: 'center'
+                                },
+                                abg: {
+                                    backgroundColor: '#333',
+                                    width: '100%',
+                                    align: 'right',
+                                    height: 25,
+                                    borderRadius: [4, 4, 0, 0]
+                                },
+                                Sunny: {
+                                    height: 30,
+                                    align: 'left',
+                                    backgroundColor: {
+                                        image: weatherIcons.Sunny
+                                    }
+                                },
+                                Cloudy: {
+                                    height: 30,
+                                    align: 'left',
+                                    backgroundColor: {
+                                        image: weatherIcons.Cloudy
+                                    }
+                                },
+                                Showers: {
+                                    height: 30,
+                                    align: 'left',
+                                    backgroundColor: {
+                                        image: weatherIcons.Showers
+                                    }
+                                },
+                                weatherHead: {
+                                    color: '#333',
+                                    height: 24,
+                                    align: 'left'
+                                },
+                                hr: {
+                                    borderColor: '#777',
+                                    width: '100%',
+                                    borderWidth: 0.5,
+                                    height: 0
+                                },
+                                value: {
+                                    width: 20,
+                                    padding: [0, 20, 0, 30],
+                                    align: 'left'
+                                },
+                                valueHead: {
+                                    color: '#333',
+                                    width: 20,
+                                    padding: [0, 20, 0, 30],
+                                    align: 'center'
+                                },
+                                rate: {
+                                    width: 40,
+                                    align: 'right',
+                                    padding: [0, 10, 0, 0]
+                                },
+                                rateHead: {
+                                    color: '#333',
+                                    width: 40,
+                                    align: 'center',
+                                    padding: [0, 10, 0, 0]
+                                }
+                            }
+                        }
+                    }
+                },
+                {value:535, name: '荆州'},
+                {value:510, name: '兖州'},
+                {value:634, name: '益州'},
+                {value:735, name: '西凉'}
+            ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+myChart.setOption(option);
+        window.addEventListener("resize", function () {
+
+            myChart.resize();
+
+        });
+    }
+</script>

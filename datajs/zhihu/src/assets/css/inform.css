@@ -1,0 +1,134 @@
+@charset "utf-8";
+.inform{
+    background: #ebebeb;
+    width: 100%;
+    height: 100%;
+}
+.inform-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .75rem;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+}
+.inform-header .inform-span-1{
+    display: block;
+    font-size: .23rem;
+    color: #3a3e3e;
+    margin-left: 10px;
+}
+.inform-header img{
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    margin-right: 10px;
+}
+.inform-le{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ffffff;
+    margin-top: 10px;
+    margin-top: .75rem;
+    padding: 10px 0;
+}
+.inform .color{
+    width: 100%;
+    height: 10px;
+    background: #3a3e3e;
+}
+.inform-le .inform-le-span-1 img{
+    display: block;
+    width: .6rem;
+    height: .6rem;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.inform-le .inform-le-span-2{
+    display: block;
+    font-size: .18rem;
+    font-weight: 600;
+    color: #242424;
+    margin-bottom: 8px;
+}
+.inform-le .inform-le-span-3{
+    display: block;
+    font-size: .13rem;
+    color: #838383;
+}
+.inform-le img{
+    display: block;
+    width: .1rem;
+    height: .17rem;
+    margin-left: 25px;
+}
+.dun{
+    margin-top: 10px;
+}
+.dun-li-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: .21rem 0;
+    border-bottom:1px solid #ebebeb; 
+}
+.dun-li-1 .dun-span-1{
+    display: block;
+    font-size: .17rem;
+    color: #999999;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.dun-li-1 .dun-span-2{
+    display: flex;
+    justify-content: flex-start;
+    font-size: .17rem;
+    color: #999999;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.dun-li-1 .dun-span-2 img{
+    display: block;
+    width: .33rem;
+    height: .19rem;
+    margin-left: 10px;
+}
+.dun-li-2{
+    display: flex;
+    justify-content: flex-start;
+    background: #ffffff;
+    padding: .16rem 0;
+}
+.dun-li-2 img{
+    display: block;
+    width: .55rem;
+    height: .55rem;
+    margin-right: .2rem;
+}
+.dun-li-2 .dun-span-3{
+    display: block;
+    font-size: .18rem;
+    color: #979797;
+}
+.dun-li-2 .dun-span-4{
+    display: block;
+    font-size: .18rem;
+    color: #1d1d1d;
+}
+.dun-li-2 .dun-span-5{
+    display: block;
+    font-size: .16rem;
+    color: #cecece;
+}
+.inform .text{
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #c0c0c0;
+    font-size: .18rem;
+}

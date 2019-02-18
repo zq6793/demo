@@ -1,0 +1,170 @@
+body,
+p,
+dl,
+dd,
+ul,
+ol,
+li,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+table,
+tr,
+td,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 1080px;
+    background:url(../img/beijing.jpg) no-repeat;
+    background-position: center;
+}
+ul{
+    list-style: none;
+}
+h3{
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.top{
+    padding-left:20px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-around;
+}
+.top,.bottom{
+    padding-left:20px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-around;
+}
+.top_one p,.bottom_two  p{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #04ffff;
+}
+.top_one p .sanjiao,.bottom_two p .sanjiao{
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color: transparent transparent transparent #00b3ff;
+    border-style:dashed dashed dashed solid;
+    border-width:10px;
+}
+.top_one,.bottom_two{
+    width: 30%;
+}
+.top_one .ul_1{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-bottom: 10px;
+     
+}
+.top_three{
+    width: 30%;
+    height: 500px;
+}
+.top_three img{
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+.top_four{
+    width: 30%;
+    height: 220px;
+}
+.top_four  p{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #04ffff;
+}
+.top_four  p .sanjiao{
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color: transparent transparent transparent #00b3ff;
+    border-style:dashed dashed dashed solid;
+    border-width:10px;
+}
+.bottom_two ul{
+  list-style: none;
+  border: 1px solid #026d7d;
+}
+.bottom_two ul li:nth-child(1){
+    height: 30px;
+    color: #fbfdfc;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #193d39;
+}
+.bottom_two ul li a{
+    text-decoration: none;
+    color: #fbfdfc;
+}
+.bottom_two ul li:nth-child(2){
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.bottom_five p{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #04ffff;
+}
+.bottom_five p .sanjiao{
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color: transparent transparent transparent #00b3ff;
+    border-style:dashed dashed dashed solid;
+    border-width:10px;
+}
+p {
+    margin: 10px 0;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+footer img{
+    transform: translateY(-25px);
+    margin-left: 30px;
+}

@@ -1,0 +1,135 @@
+
+  1 <!DOCTYPE html>
+  2 <html lang="en">
+  3 
+  4 <head>
+  5     <meta charset="UTF-8">
+  6     <title>滑块验证解锁</title>
+  7     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  8     <style>
+  9     .drag {
+ 10         width: 300px;
+ 11         height: 40px;
+ 12         line-height: 40px;
+ 13         background-color: #e8e8e8;
+ 14         position: relative;
+ 15         margin: 0 auto;
+ 16     }
+ 17 
+ 18     .bg {
+ 19         width: 40px;
+ 20         height: 100%;
+ 21         position: absolute;
+ 22         background-color: #75CDF9;
+ 23     }
+ 24 
+ 25     .text {
+ 26         position: absolute;
+ 27         width: 100%;
+ 28         height: 100%;
+ 29         text-align: center;
+ 30         user-select: none;
+ 31     }
+ 32 
+ 33     .btn {
+ 34         width: 40px;
+ 35         height: 38px;
+ 36         position: absolute;
+ 37         border: 1px solid #ccc;
+ 38         cursor: move;
+ 39         font-family: "宋体";
+ 40         text-align: center;
+ 41         background-color: #fff;
+ 42         user-select: none;
+ 43         color: #666;
+ 44     }
+ 45     </style>
+ 46 </head>
+ 47 
+ 48 <body>
+ 49     <div class="drag">
+ 50         <div class="bg"></div>
+ 51         <div class="text" onselectstart="return false;">请拖动滑块解锁</div>
+ 52         <div class="btn">&gt;&gt;</div>
+ 53     </div>
+ 54     <script>
+ 55     (function() {
+ 56         //一、定义一个获取DOM元素的方法
+ 57         var $ = function(selector) {
+ 58                 return document.querySelector(selector);
+ 59             },
+ 60             box = $(".drag"), //容器
+ 61             bg = $(".bg"), //背景
+ 62             text = $(".text"), //文字
+ 63             btn = $(".btn"), //滑块
+ 64             success = false, //是否通过验证的标志
+ 65             distance = box.offsetWidth - btn.offsetWidth; //滑动成功的宽度（距离）
+ 66 
+ 67         //二、给滑块注册鼠标touchmove
+ 68         btn.addEventListener("touchmove", function(e) {
+ 69 
+ 70             //1.鼠标按下之前必须清除掉后面设置的过渡属性
+ 71             btn.style.transition = "";
+ 72             bg.style.transition = "";
+ 73 
+ 74             //说明：clientX 事件属性会返回当事件被触发时，鼠标指针向对于浏览器页面(或客户区)的水平坐标。
+ 75 
+ 76             //2.当滑块位于初始位置时，得到鼠标按下时的水平位置
+ 77             var e = e || window.event;
+ 78             var offsetX = e.touches[0].clientX- btn.offsetWidth;
+ 79             //三、给文档注册鼠标移动事件
+ 80 
+ 81             //3.在这里判断一下：鼠标水平移动的距离 与 滑动成功的距离 之间的关系
+ 82             if (offsetX > distance) {
+ 83                 offsetX = distance; //如果滑过了终点，就将它停留在终点位置
+ 84             } else if (offsetX < 0) {
+ 85                 offsetX = 0; //如果滑到了起点的左侧，就将它重置为起点位置
+ 86             }
+ 87 
+ 88             //4.根据鼠标移动的距离来动态设置滑块的偏移量和背景颜色的宽度
+ 89             btn.style.left = offsetX + "px";
+ 90             bg.style.width = offsetX + "px";
+ 91 
+ 92             //如果鼠标的水平移动距离 = 滑动成功的宽度,保证只滑动一次
+ 93             if (offsetX == distance && !success) {
+ 94 
+ 95                 //1.设置滑动成功后的样式
+ 96                 text.innerHTML = "验证通过";
+ 97                 text.style.color = "#fff";
+ 98                 btn.innerHTML = "&radic;";
+ 99                 btn.style.color = "green";
+100                 bg.style.backgroundColor = "lightgreen";
+101 
+102                 //2.设置滑动成功后的状态
+103                 success = true;
+104                 //成功后，清除掉鼠标按下事件和移动事件（因为移动时并不会涉及到鼠标松开事件）
+105 
+106                 //3.成功解锁后的回调函数
+107                 setTimeout(function() {
+108                     alert('解锁成功！');
+109                 }, 100);
+110             }
+111 
+112         })
+113         btn.addEventListener("touchend", function(e) {
+114             //如果鼠标松开时，滑到了终点，则验证通过
+115           
+116             if (success) {
+117 
+118                 return;
+119             } else {
+120                 //反之，则将滑块复位（设置了1s的属性过渡效果）
+121                 btn.style.left = 0;
+122                 bg.style.width = 0;
+123                 //过渡属性设置
+124                 btn.style.transition = "left 1s ease";
+125                 bg.style.transition = "width 1s ease";
+126 
+127             }
+128 
+129         })
+130     })();
+131     </script>
+132 </body>
+133 
+134 </html>

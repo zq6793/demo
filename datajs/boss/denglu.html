@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <style>
+          body,
+        html {
+            height: 100%;
+            position: relative;
+        }
+
+        html {
+            font-size: 26.67vw;
+        }
+
+        body,
+        p,
+        dl,
+        dd,
+        ul,
+        ol,
+        li,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        form,
+        input,
+        table,
+        tr,
+        td {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 1.15rem;
+            line-height: 0.65rem;
+            text-align: center;
+            margin-bottom: .7rem;
+        }
+
+        header span {
+            font-size: 0.35rem;
+            color: #64d1be;
+        }
+        header p{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        header p span{
+            display: block;
+            width: 50%;
+            height: .5rem;
+            font-size: 16px;
+            text-align: center;
+            line-height: .5rem;
+            text-decoration: none;
+            color: #a0a4b1;
+            border-bottom: 1px solid #f2f5f9;
+        }
+        section {
+            width: 100%;
+            position: relative;
+            /* padding: 0 20px; */
+        }
+
+        .phone ,.pass {
+            width: 90%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: .15rem;
+            display: flex;
+            text-indent: 10px;
+            border: 1px solid #e3e2e7;
+            margin: auto;
+            /* justify-content: space-around; */
+        }
+        .pass{
+            margin-top: .3rem;
+            margin-bottom: 1px;
+            display: none;
+        }
+        .phone select {
+            width: .4rem;
+            text-align: right;
+            border: transparent;
+            margin-left: 10px;
+            outline: none;
+        }
+
+        .phone select option {
+            width: 0.7rem;
+            line-height: .15rem;
+            background: #ffffff;
+            color: #3a496b;
+        }
+
+        .phone input,.pass input {
+            border: transparent;
+            height: 0.5rem;
+            flex: 1;
+            margin-left: 10px;
+            outline: none;
+        }
+
+        .phone .iconfont，.pass .iconfont {
+            font-size: .24rem;
+            margin-top: 2px;
+        }
+
+        #phone_first {
+            width: 0.8rem;
+            height: .5rem;
+            line-height: .5rem;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 0px;
+        }
+
+        .phone img {
+            width: .15rem;
+            height: .15rem;
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-top: .17rem;
+        }
+
+        ul {
+            list-style: none;
+            width: 1.7rem;
+            border: 1px solid #e7eaef;
+            position: absolute;
+            left: .18rem;
+            top: .5rem;
+            display: none;
+            z-index: 9;
+            background: #ffffff;
+        }
+
+        ul li {
+            width: 1.7rem;
+            height: .5rem;
+            line-height: .5rem;
+            font-size: 16px;
+            color: #5b7083;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section .huadong_qu {
+            width: 91%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            background: #dddddd;
+            margin: auto;
+            margin-top: .3rem;
+            display: flex;
+            position: relative;
+        }
+
+        section .huadong_qu .huadong_box {
+            width: 0.62rem;
+            height: 0.48rem;
+            background: #ffffff;
+            font-size: .24rem;
+            line-height: .47rem;
+            text-align: center;
+            color: #dfdfdf;
+            margin-right: 1rem;
+            position: absolute;
+            z-index: 4;
+            display: block;
+        }
+
+        section .huadong_qu span {
+            font-size: 16px;
+            color: #adadad;
+            margin-left: 1.2rem;
+            /* position: relative; */
+        }
+
+        .xinxi {
+            width: 90%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: .15rem;
+            display: flex;
+            text-indent: 10px;
+            border: 1px solid #e3e2e7;
+            margin: auto;
+            margin-top: .3rem;
+        }
+
+        .xinxi .iconfont {
+            font-size: .24rem;
+            margin-top: 2px;
+        }
+
+        section .xinxi input {
+            border: transparent;
+            height: 0.5rem;
+            flex: 1;
+            margin-left: 10px;
+            outline: none;
+        }
+
+        .xinxi button {
+            background: #ffffff;
+            border: transparent;
+            outline: none;
+        }
+
+        .xinxi button a {
+            text-decoration: none;
+            color: #7ec6b8;
+            border-left: 1px solid #e7e7e7;
+            /* margin: 0 10px; */
+            text-align: center;
+            display: inline-block;
+            width: .89rem;
+        }
+
+        section .sub {
+            width: 91%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: .15rem;
+            background: #5ed6ca;
+            border: transparent;
+            outline: none;
+            color: #ffffff;
+            display: block;
+            margin: auto;
+            margin-top: .5rem;
+        }
+
+        section p {
+            font-size: 14px;
+            color: #9d9ca1;
+            text-align: center;
+            margin: 10px 20px;
+        }
+
+        section p a {
+            text-decoration: none;
+            color: #18c1a4;
+            font-size: 16px;
+        }
+
+        .huadong_qu #smill {
+            width: 16px;
+            height: 16px;
+            background: #f4f1f1;
+            display: inline-block;
+            border-radius: 40%;
+            position: absolute;
+            top: .16rem;
+            opacity: .6;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>
+            登录BOSS直聘
+        </span>
+        <p><span class="p_a">密码登录</span><span class="p_a">短信登录</s></p>
+    </header>
+    <section  class="section_one">
+        <form action="shouye.html">
+            <div class="phone">
+                <i class="iconfont icon-shouji-"></i>
+                <span id="phone_first"><span id='shu'>+86</span><img id="imgs" src="img/anniu.jpg" alt=""> </span>
+                <input type="text" value="" placeholder="手机号">
+            </div>
+            <ul>
+                <li><span style="margin-left:10px;">中国大陆</span><span style="margin-right:10px;" class="phone_one">+86</span></li>
+                <li><span style="margin-left:10px;">美国</span><span style="margin-right:10px;" class="phone_one">+1</span></li>
+                <li><span style="margin-left:10px;">香港</span><span style="margin-right:10px;" class="phone_one">+852</span></li>
+                <li><span style="margin-left:10px;">日本</span><span style="margin-right:10px;" class="phone_one">+81</span></li>
+                <li><span style="margin-left:10px;">中国台湾</span><span style="margin-right:10px;" class="phone_one">+886</span></li>
+                <li><span style="margin-left:10px;">英国</span><span style="margin-right:10px;" class="phone_one">+44</span></li>
+                <li><span style="margin-left:10px;">韩国</span><span style="margin-right:10px;" class="phone_one">+82</span></li>
+
+            </ul>
+            <div class="pass">
+                <i class="iconfont icon-shouji-"></i>
+                <input type="text" value="" placeholder="密码">
+            </div>
+            <div class="huadong_qu">
+                <div style="left:0;" class="huadong_box">&gt;&gt;</div>
+                <span id="text">请向右滑动验证</span>
+                <span style="  left:0rem ;" id="smill"></span>
+            </div>
+            <div class="xinxi">
+                <i class="iconfont icon-duanxin"></i>
+                <input type="text" placeholder="短信验证码">
+                <button>
+                    <a href="">
+                        发送验证码
+                    </a>
+                </button>
+            </div>
+            <input class="sub" type="submit" value="登录">
+        </form>
+        <!-- <p>点击注册按钮即为您同意<a href="">用户协议及隐私政策</a></p> -->
+        <p>没有账号<a href="zhuce.html">立即注册</a></p>
+    </section>
+
+</body>
+</html>
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="js/myJs.js"></script>
+<script type="text/javascript">    
+   
+    var team = '';
+    window.onload = function () {
+        hua_kuai();
+        huadong_box();
+        ul();
+        dianji();
+    }
+    function dianji(){
+    var p_a  = $('.p_a');
+    p_a[0].onclick=function(){
+        this.style.cssText = "border-bottom:1px solid #62d5c8;color:#414a60;font-size:20px;"
+        $('.xinxi')[0].style.display = 'none';
+        $('.pass')[0].style.display = 'flex';
+        p_a[1].style.cssText = " font-size: 16px;color: #a0a4b1;border-bottom: 1px solid #f2f5f9;"
+    }
+    p_a[1].onclick = function(){
+        this.style.cssText = "border-bottom:1px solid #62d5c8;color:#414a60;font-size:20px;"
+        $('.pass')[0].style.display = 'none';
+        $('.xinxi')[0].style.display = 'flex';
+        p_a[0].style.cssText = " font-size: 16px;color: #a0a4b1;border-bottom: 1px solid #f2f5f9;"
+    }
+}
+</script>

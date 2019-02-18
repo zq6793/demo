@@ -1,0 +1,465 @@
+@charset "utf-8";
+.schoolheader{
+    height: 1.35rem;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3; 
+    position: fixed;
+    top:0;
+    background: #ffffff;
+}
+.schoolheader li:nth-child(1){
+   height: 1rem; 
+   display: flex;
+   align-items: center;
+}
+.schoolheader li .school-header-tu{
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    margin-left: .2rem;
+}
+.schoolheader li p{
+    margin-left: .15rem;
+    margin-right: .3rem;
+}
+.schoolheader li .school-header-1{
+    display: block;
+  font-size: .2rem;
+  color: #dca678;
+}
+.schoolheader li p img{
+    display: inline-block;
+    width: .15rem;
+    height: .15rem;
+}
+.schoolheader li .school-header-2{
+    display: block;
+    font-size: .14rem;
+    color: #959595;
+}
+.schoolheader .school-header-shu{
+    display: block;
+    width: .26rem;
+    height: .34rem;
+}
+.schoolheader .school-header-soushu{
+    display: block;
+    width: .34rem;
+    height: .34rem;
+    margin-left: .25rem;
+}
+.schoolheader .daohang{
+    display: flex;
+    justify-content: space-around;
+}
+.schoolheader .daohang .ke{
+   display: block;
+   font-size: .2rem;
+   color: #f1aa6c;
+   height: .35rem;
+   line-height: .35rem;
+   border-bottom: 2px solid #f1aa6c;
+}
+.schoolheader .daohang .read{
+    display: block;
+    font-size: .2rem;
+    color: #a09a9a;
+    height: .35rem;
+    line-height: .35rem;
+ }
+ .le{
+     width: 100%;
+    border-bottom: 1px solid #d3d3d3; 
+    padding-bottom: .3rem;    
+    margin-top: 1.6rem; 
+ }
+ .le ul{
+     list-style: none;
+ }
+ .le li{
+     display: flex;
+     justify-content: space-around;
+     margin-top: .25rem;
+ }
+ .le .school-imgs{
+     display: block;
+     width: 95%;
+     height: 1rem;
+ }
+ .le img{
+     display: inline-block;
+     width: .32rem;
+     height: .33rem;
+     margin-bottom: .1rem;
+ }
+ .le li .span-img{
+     display: block;
+     width: 20%;
+     text-align: center;
+ }
+ .le li .span-img span{
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+ }
+ .le li span{
+     font-size: .14rem;
+     color: #6c6c6c;
+ }
+ .ketang{
+     width: 100%;
+     border-bottom: 1px solid #d3d3d3; 
+ }
+ .ketang h2{
+     height: .85rem;
+     line-height: .85rem;
+     font-size: .22rem;
+     color: #262626;
+     text-indent: 10px;
+ }
+ .ketang li{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding-bottom: .3rem;
+ }
+ .ketang li .span-img{
+     display: block;
+     width:.96rem;
+     height: 1.28rem;
+     margin:0 10px;
+ }
+ .ketang li img{
+     display: block;
+     width: .96rem;
+     height: 1.28rem;
+ }
+ .ketang li .ketang-span-one{
+     display: block;
+     font-size: .16rem;
+     color: #222222;
+ }
+ .ketang li .ketang-span-two{
+    display: block;
+    font-size: .1rem;
+    color: #a3a3a3;
+    margin: 15px 0;
+}
+.ketang li span{
+    display: block;
+    font-size: .1rem;
+    color: #a3a3a3;
+}
+.ketang li .ketang-span-three{
+    display: block;
+    font-size: .15rem;
+    color: #e0ad80;
+    background: #ddd4d4;
+    border-radius: 15px;
+    width:.8rem;
+    height: .4rem;
+    text-align: center;
+    line-height: .4rem;
+}
+.ketang li .ketang-span-four{
+    display: block;
+    font-size: .12rem;
+    color:#a3a3a3;
+}
+.keji{
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3; 
+}
+.keji li img{
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    height: 1.8rem;
+    margin-top: .25rem;
+}
+.keji .keji-li-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.keji li .keji-span-1{
+    font-size: .2rem;
+    font-weight: 600;
+    color: #070707;
+    display: block;
+    margin: .15rem 0;
+}
+.keji li .keji-span-2{
+    font-size: .15rem;
+    color: #919191;
+    display: block;
+    margin-bottom: .2rem;
+}
+.keji li .keji-span-3{
+    display: block;
+    width: 1rem;
+    height: .4rem;
+    background: #d3d3d3;
+    color: #ffa350;
+    font-size: .16rem;
+    text-align: center;
+    line-height: .4rem;
+    border-radius: 15px;
+}
+.mingren{
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3; 
+}
+.mingren .mingren-li-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .3rem 0;
+}
+.mingren .mingren-span-1{
+    font-size: .25rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    display: block;
+    margin-left: 10px;
+}
+.mingren .mingren-span-2{
+    font-size: .18rem;
+    color: #adadad;
+    margin-left: 1.6rem;
+}
+.mingren .mingren-li{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:.6rem;
+}
+.mingren .mingren-p-1{
+    width: 20%;
+}
+.mingren p img{
+    display: block;
+    width: 100%;
+}
+.mingren .mingren-span-3{
+    font-size: .13rem;
+    color: #484848;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-indent: 10px;
+    margin-top: .1rem;
+}
+.mingren .mingren-img{
+    display: block;
+    width: .15rem;
+    height: .15rem;
+    margin-left: 5px;
+}
+.mingren .ketang  .mingren-img-1{
+    display:block;
+    width:.95rem;
+    height:.95rem;
+}
+.mingren .ketang .mingren-li-3{
+    display: flex;
+    align-items: center;
+}
+.mingren .ketang .mingren-li-3 .span-img{
+    display: block;
+    height: .95rem;
+    width: .95rem;
+}
+
+.mingren .ketang .mingren-li-3 .ketang-span-one{
+    margin-bottom: .15rem;
+}
+.school-quan{
+    width:100%;
+    height:.7rem;
+ }
+ .end{
+    width: 100%;
+    background: #989898;
+    padding: 20px 0;
+}
+.end p{
+    width: 100%;
+    font-size: 16px;
+    color: #464646;
+    text-align: center;
+}
+.end span{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+}
+.read-le{
+    width: 100%;
+   border-bottom: 1px solid #d3d3d3; 
+   padding-bottom: .3rem; 
+   margin-top: 1.6rem;     
+}
+.read-le ul{
+    list-style: none;
+}
+.read-le li{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .15rem;
+}
+.read-le .school-imgs{
+    display: block;
+    width: 95%;
+    height: 1rem;
+}
+.read-le .read-img-2{
+    display: inline-block;
+    width: .32rem;
+    height: .33rem;
+    margin-bottom: .1rem;
+}
+.read-le li .span-img{
+    display: block;
+    width: 20%;
+    text-align: center;
+}
+.read-le li .span-img span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.read-le li span{
+    font-size: .14rem;
+    color: #6c6c6c;
+}
+.read-le .read-book{
+    display: block;
+    width: 95%;
+    height: .5rem;
+    margin-top: .1rem;
+}
+.read-le .mingren-li-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.read-le .mingren-span-1{
+    font-size: .25rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    display: block;
+    margin-left: 10px;
+}
+.read-le .mingren-span-2{
+    font-size: .18rem;
+    color: #adadad;
+    margin-right: 10px;
+}
+.read-le .mingren-li{
+    display: flex;
+    justify-content: space-around;
+}
+.read-le .mingren-p-1{
+    width: 20%;
+}
+.read-le p .read-img-1{
+    display: block;
+    width: 100%;
+}
+.read-le .mingren-span-3{
+    font-size: .13rem;
+    color: #484848;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-indent: 10px;
+    margin-top: .1rem;
+}
+.read-le .mingren-img{
+    display: block;
+    width: .15rem;
+    height: .15rem;
+    margin-left: 5px;
+}
+.read-le .ketang  .mingren-img-1{
+    display:block;
+    width:.95rem;
+    height:.95rem;
+}
+.read-le .ketang .mingren-li-3{
+    display: flex;
+    align-items: center;
+}
+.read-le .ketang .mingren-li-3 .span-img{
+    display: block;
+    height: .95rem;
+    width: .95rem;
+}
+
+.read-le .ketang .mingren-li-3 .ketang-span-one{
+    margin-bottom: .15rem;
+}
+.read-le .mingren-li{
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: .25rem;
+}
+.read-le .lingread{
+    display: flex;
+    justify-content: flex-start;
+}
+.read-le .lingread-span{
+    background: #f3efef;
+    color: #5d5d5d;
+    font-size: .1rem;
+    padding: .08rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3rem;
+    margin-left: 10px;
+} 
+.read-le .read-ul-li{
+    display: flex;
+    justify-content: space-around;
+}
+.read-le .ketang li .span-img{
+    display: block;
+    width:.96rem;
+    height: 1.28rem;
+    margin:0 10px;
+}
+.read-le .ketang li img{
+    display: block;
+    width: .96rem;
+    height: 1.28rem;
+}
+.read-dian{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: .1rem;
+}
+.read-dian p{
+    width: 29%;
+}
+.read-dian p img{
+    display: block;
+    width: 100%;
+    height: 1.8rem;
+}
+.read-dian .read-book-span-1{
+    display: block;
+    font-size: .17rem;
+    color: #181818;
+    margin: .05rem 0;
+    height: .45rem;
+}
+.read-dian .read-book-span-2{
+    display: block;
+    font-size: .15rem;
+    color: #9c9c9c;
+}

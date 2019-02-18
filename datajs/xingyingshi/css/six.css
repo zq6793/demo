@@ -1,0 +1,244 @@
+body,
+p,
+dl,
+dd,
+ul,
+ol,
+li,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+table,
+tr,
+td,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+
+.left {
+    width: 18%;
+    height: 100%;
+    background: #172b4d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.left::-webkit-scrollbar {
+    width: 0;
+}
+
+.left h2 {
+    height: 0;
+    padding: 15% 0;
+    border-bottom: 1px solid #3a4b68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h2 img {
+    width: 34px;
+    height: 34px;
+    display: block;
+    padding-right: 5%;
+}
+
+.left h2 span {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left ul li {
+
+    height: 0;
+    padding: 11% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7f9bcc;
+    text-indent: 7%;
+    padding-left: 7%;
+    font-size: 1.4rem;
+}
+
+.left ul li .left_he {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left ul .li_one {
+    font-size: 1rem;
+    text-indent: 0;
+}
+
+.left ul li img:nth-child(2) {
+    padding-right: 10%;
+}
+
+.right {
+    width: 82%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 18%;
+    overflow: auto;
+}
+
+.right header {
+    width: 82%;
+    height: 60px;
+    /* padding: 3% 0; */
+    background: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+.right .right_left {
+    width: 50%;
+    height: 100%;
+    padding: 3% 0;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right header .right_left input {
+    width: 70%;
+    display: -webkit-inline-box;
+    height: 30px;
+    /* padding: 3% 0; */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    /* color: #e4e5e7; */
+    text-indent: 5px;
+    border: 1px solid #e5e5ea;
+    background: #f9f9f9 url("../img/fangda.jpg") no-repeat 97% 50%;
+}
+
+.right header .right_left img {
+    display: block;
+    padding: 0 5%;
+}
+
+.right .right_right {
+    flex: 1;
+    height: 100%;
+    padding: 3% 0;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right .right_right img {
+    display: block;
+    margin-right: 3%;
+}
+
+section {
+    height: 100px;
+    background: #f7f7f7;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: space-between;
+    /* box-shadow: 0 -10px -3px #ebebeb; */
+}
+
+.section_left {
+    height: 100px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.section_left span {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.section_left p a {
+    text-decoration: none;
+    color: #589ceb;
+    font-size: 1.6rem;
+}
+
+.section_left p span {
+    font-size: 1.6rem;
+    color: #707980;
+    font-weight: 100;
+    display: inline-block;
+}
+
+section img {
+    display: block;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.zhong {
+    padding: 0 20px;
+}
+
+.zhong ul {
+    width: 96%;
+    list-style: none;
+    box-shadow: 0 4px 3px #99a4ac;
+    background: #ffffff;
+    margin-top: 40px;
+}
+
+.zhong ul li {
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    font-size: 1.4rem;
+}
+.zhong .ul_two {
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+
+}
+.foot{
+    height: 50px;
+    margin-top: 60px;
+    border-top:1px solid #dee2e6;
+}
+.foot p{
+    font-size: 1.3rem;
+    height: 50px;
+    background: #f7f7f7;
+    line-height: 50px;
+    text-align: center;
+}

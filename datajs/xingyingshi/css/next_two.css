@@ -1,0 +1,367 @@
+body,
+p,
+dl,
+dd,
+ul,
+ol,
+li,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+table,
+tr,
+td,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+
+.left {
+    width: 18%;
+    height: 100%;
+    background: #172b4d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.left::-webkit-scrollbar {
+    width: 0;
+}
+
+.left h2 {
+    height: 0;
+    padding: 15% 0;
+    border-bottom: 1px solid #3a4b68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h2 img {
+    width: 34px;
+    height: 34px;
+    display: block;
+    padding-right: 5%;
+}
+
+.left h2 span {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left ul li {
+
+    height: 0;
+    padding: 11% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7f9bcc;
+    text-indent: 7%;
+    padding-left: 7%;
+    font-size: 1.4rem;
+}
+
+.left ul li .left_he {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left ul .li_one {
+    font-size: 1rem;
+    text-indent: 0;
+}
+
+.left ul li img:nth-child(2) {
+    padding-right: 10%;
+}
+
+.right {
+    width: 82%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 18%;
+    overflow: auto;
+}
+
+.right header {
+    width: 82%;
+    height: 60px;
+    /* padding: 3% 0; */
+    background: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+.right .right_left {
+    width: 50%;
+    height: 100%;
+    padding: 3% 0;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right header .right_left input {
+    width: 70%;
+    display: -webkit-inline-box;
+    height: 30px;
+    /* padding: 3% 0; */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    /* color: #e4e5e7; */
+    text-indent: 5px;
+    border: 1px solid #e5e5ea;
+    background: #f9f9f9 url("../img/fangda.jpg") no-repeat 97% 50%;
+}
+
+.right header .right_left img {
+    display: block;
+    padding: 0 5%;
+}
+
+.right .right_right {
+    flex: 1;
+    height: 100%;
+    padding: 3% 0;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right .right_right img {
+    display: block;
+    margin-right: 3%;
+}
+
+section {
+    height: 100px;
+    background: #f7f7f7;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: space-between;
+    /* box-shadow: 0 -10px -3px #ebebeb; */
+}
+
+.section_left {
+    height: 100px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.section_left span {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.section_left p a {
+    text-decoration: none;
+    color: #589ceb;
+    font-size: 1.6rem;
+}
+
+.section_left p span {
+    font-size: 1.6rem;
+    color: #707980;
+    font-weight: 100;
+    display: inline-block;
+}
+
+section img {
+    display: block;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.two_one{
+    height: 560px;
+    background: #f7f7f7;
+    padding-top: 60px;
+}
+.two_two{
+    height: 680px;
+}
+.two_three{
+ height: 690px;
+}
+.two_four{
+    height: 600px;
+}
+.two_six{
+    height:600px;
+}
+.two_five{
+    height: 400px;
+}
+.uls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.two_one p ,.two_two p,.two_three p,.two_four p,.two_five p,.two_six p{
+    height: 50px;
+    font-size: 1.4rem;
+    color: #172b4d;
+    text-indent: 20px;
+}
+
+.two_one ul,.two_three ul,.two_four ul ,.two_six ul{
+    width: 32%;
+    background: #ffffff;
+    /* background: red; */
+    box-shadow: 0 3px #ededed;
+    list-style: none;
+}
+
+.two_one ul .img_one ,.two_two ul .img_one,.two_three ul .img_one,.two_four ul .img_one,.two_six ul .img_one{
+    width: 100%;
+}
+.two_one ul h3 ,.two_two ul h3,.two_three ul h3,.two_four ul h3,.two_six ul h3 {
+    font-size: 1.6rem;
+    color: #5e72e4;
+    line-height: 60px;
+    text-indent: 20px;
+}
+
+.two_one ul p ,.two_two ul p,.two_three ul p,.two_four ul p,.two_six ul p{
+    font-size: 1.3rem;
+    color: #676363;
+    text-indent: 0;
+    margin-left: 20px;
+    width: 90%;
+    line-height: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e4eaec;
+}
+.two_two ul p{
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+.two_four ul p ,.two_six ul p{
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    border-bottom: 0;
+}
+.two_one ul .img_two,.two_two ul .img_two {
+    display: block;
+    padding: 25px 20px;
+}
+.two_two ul,.two_four ul,.two_six ul{
+    width: 48%;
+    background: #ffffff;
+    box-shadow: 0 3px #ededed;
+}
+.two_six ul{
+    width:32%;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.two_six ul span{
+    padding-left: 20px;
+}
+.two_six{
+    padding-bottom:20px;
+    box-sizing: border-box;
+    height: 480px;
+}
+.two_three ul li{
+    height: 50px;
+    border-bottom: 1px solid #e4eaec;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.two_three ul li span{
+    display: block;
+    font-size: 1.3rem;
+    color: #676363;
+}
+.two_three ul li .span_li{
+    width: 30px;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    color: #f7f7f7;
+    line-height: 20px;
+    text-align: center;
+    background:#172b4d;
+    margin-right: 20px;
+}
+.two_three ul .li_one{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.two_three ul .li_one a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1.4rem;
+    display: block;
+    margin-right: 50px;
+}
+ .two_three .uls {
+    display: flex;
+    justify-content: space-around;
+}
+.two_four span{
+    height: 30px;
+    font-size: 1.2rem;
+    color:  #676363;
+    display: block;
+    padding: 0 20px;
+    line-height: 30px;
+    /* padding-bottom: 40px; */
+    box-sizing: border-box;
+}
+.two_five ul{
+    width: 48%;
+}
+.two_five ul img{
+    width: 100%;
+}
+.foot{
+    height: 50px;
+    border-top:1px solid #dee2e6;
+}
+.foot p{
+    font-size: 1.3rem;
+    height: 50px;
+    background: #f7f7f7;
+    line-height: 50px;
+    text-align: center;
+}
